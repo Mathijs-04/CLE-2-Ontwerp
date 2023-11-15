@@ -1,0 +1,240 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url(https://db.onlinewebfonts.com/c/953e30bac9020d26a8d0ffd0c9fe5ebb?family=HeroicCondensed-Medium);
+
+@font-face {
+    font-family: "HeroicCondensed-Medium";
+    src: url("https://db.onlinewebfonts.com/t/953e30bac9020d26a8d0ffd0c9fe5ebb.eot");
+    src: url("https://db.onlinewebfonts.com/t/953e30bac9020d26a8d0ffd0c9fe5ebb.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/953e30bac9020d26a8d0ffd0c9fe5ebb.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/953e30bac9020d26a8d0ffd0c9fe5ebb.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/953e30bac9020d26a8d0ffd0c9fe5ebb.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/953e30bac9020d26a8d0ffd0c9fe5ebb.svg#HeroicCondensed-Medium")format("svg");
+}
+
+body {
+    background-color: #767171;
+    font-family: "HeroicCondensed-Medium";
+    font-size: 2rem;
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: #01d31c;
+}
+
+#soundBars {
+    padding-left: 5vw;
+    padding-top: 6vw;
+}
+
+#soundBars2:hover {
+    background-color: #404040;
+}
+
+#bars {
+    height: 30px;
+    left: 50%;
+    margin: -30px 0 0 -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+}
+
+.bar {
+    background: #01d31c;
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 3px;
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+        opacity: .35;
+        height: 3px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+
+.bar:nth-child(1) {
+    left: 1px;
+    animation-duration: 474ms;
+}
+
+.bar:nth-child(2) {
+    left: 5px;
+    animation-duration: 433ms;
+}
+
+.bar:nth-child(3) {
+    left: 9px;
+    animation-duration: 407ms;
+}
+
+.bar:nth-child(4) {
+    left: 13px;
+    animation-duration: 458ms;
+}
+
+.bar:nth-child(5) {
+    left: 17px;
+    animation-duration: 400ms;
+}
+
+.bar:nth-child(6) {
+    left: 21px;
+    animation-duration: 427ms;
+}
+
+.bar:nth-child(7) {
+    left: 25px;
+    animation-duration: 441ms;
+}
+
+.bar:nth-child(8) {
+    left: 29px;
+    animation-duration: 419ms;
+}
+
+.bar:nth-child(9) {
+    left: 33px;
+    animation-duration: 487ms;
+}
+
+.bar:nth-child(10) {
+    left: 37px;
+    animation-duration: 442ms;
+}
+
+.hero {
+    background-color: #767171;
+}
+
+.navbar {
+    background-color: #404040;
+    height: 10vh;
+}
+
+.navbar-item {
+    color: black;
+}
+
+a.navbar-item:hover {
+    color: black;
+    background-color: #767171;
+    text-decoration: underline;
+    text-decoration-color: #01d31c;
+    transition: all 0.1s ease-in-out;
+}
+
+.button.is-primary {
+    background-color: #767171;
+    border-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.button.is-primary:hover {
+    background-color: black;
+    border-color: transparent;
+    color: #767171;
+}
+
+.footer {
+    background-color: #404040;
+}
+
+#buttons {
+    margin-top: -100vh;
+    margin-left: 32.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#button1 {
+    width: 15vw;
+    margin-right: 5vw;
+    border-radius: 2vw;
+    font-family: "HeroicCondensed-Medium";
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#button1:hover {
+    width: 15vw;
+    margin-right: 5vw;
+    border-radius: 2vw;
+    font-family: "HeroicCondensed-Medium";
+    font-size: 2rem;
+    transform: scale(1.15);
+    border: solid;
+    border-color: #01d31c;
+    border-width: 2px;
+}
+
+#button2 {
+    width: 15vw;
+    border-radius: 2vw;
+    font-family: "HeroicCondensed-Medium";
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#button2:hover {
+    width: 15vw;
+    border-radius: 2vw;
+    font-family: "HeroicCondensed-Medium";
+    font-size: 2rem;
+    transform: scale(1.15);
+    border: solid;
+    border-color: #01d31c;
+    border-width: 2px;
+}
+
+#section1 {
+    margin-top: 50vh;
+    margin-bottom: -25vh;
+}
+
+.section {
+    background-color: #767171;
+    text-align: center;
+}
+
+.title {
+    color: black;
+    font-size: 4rem;
+}
+
+.subtitle {
+    color: black;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 0vw 0vw 60vw;
+
+}
+
+.footerLink {
+    font-size: 1.5rem;
+    color: black;
+    padding: 2vw;
+}
+
+.footerLink:hover {
+    font-size: 1.5rem;
+    color: black;
+    padding: 2vw;
+    text-decoration: underline;
+    text-decoration-color: #01d31c;
+}
